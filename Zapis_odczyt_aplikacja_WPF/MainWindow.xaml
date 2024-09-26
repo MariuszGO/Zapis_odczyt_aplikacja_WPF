@@ -1,0 +1,29 @@
+﻿<Window x:Class="Zapis_odczyt_aplikacja_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zapis_odczyt_aplikacja_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="imie"  HorizontalAlignment="Left" Margin="48,30,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="nazwisko" HorizontalAlignment="Left" Margin="48,33,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="48,10,0,0" TextWrapping="Wrap" Text="Imię" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="48,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Nazwisko" VerticalAlignment="Top"/>
+        <Button Content="Zapisz" HorizontalAlignment="Left" Margin="71,27,0,0" Grid.Row="2" VerticalAlignment="Top" Click="zapisz_do_bazy"/>
+        <TextBlock x:Name="komunikat"  HorizontalAlignment="Left" Margin="90,105,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+
+
+    </Grid>
+</Window>
